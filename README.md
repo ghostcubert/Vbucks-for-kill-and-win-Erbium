@@ -1,7 +1,7 @@
 # Vbucks-for-kill-and-win-Erbium
 This is for people who want to skid and make a really good skiddy project or use it for reference
 
-## Took inspo from https://github.com/kovryn/Vbucks-on-kill-and-win-GS-PART- Star his repository
+## Took inspo from https://github.com/kovryn/Vbucks-on-kill-and-win-GS-PART- Star his repository, Credit [Ghostcubert](https://github.com/ghostcubert) and [Kovryn](https://github.com/kovryn)
 
 # Get started
 ### Open erbium.sln, click "show all files" on visual studio explorer, include libcurl folder in the project, then open the folder and include libcurl.h
