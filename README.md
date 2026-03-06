@@ -10,7 +10,7 @@ This is for people who want to skid and make a really good skiddy project or use
 Then open FortniteGame/Public/FortPlayerStateAthena.h, at the bottom add these, make sure they are inside the brackets { }:
 ```
 DEFINE_FUNC(GetPlayerName, FString);
-DEFINE_PROP(AccountId, FString); //IDK if its necessary tbh
+DEFINE_PROP(AccountId, FString); //IDK if its necessary tbh prob not
 ```
 Save, now open FortniteGame/Private/FortPlayerControllerAthena.cpp
 at the top below the header add these ones
@@ -30,8 +30,8 @@ void RewardVBucks(std::string Username, std::string Reason) {
         std::string SafeUsername = output;
         curl_free(output);
 
-        std::string ApiKey = "ur-api-key";
-        std::string BaseUrl = "http://127.0.0.1:3551/api/reload/vbucks";
+        std::string ApiKey = "ur-api-key"; //Your api key in config
+        std::string BaseUrl = "http://127.0.0.1:3551/api/reload/vbucks"; //Backend Ip:port/route
         std::string FullUrl = BaseUrl + "?apikey=" + ApiKey +
             "&username=" + SafeUsername +
             "&reason=" + Reason;
@@ -56,7 +56,7 @@ auto* AthenaPS = (AFortPlayerStateAthena*)KillerPlayerState;
 if (AthenaPS) {
     std::string KillerName = AthenaPS->GetPlayerName().ToString().c_str();
     std::thread([KillerName]() {
-        RewardVBucks(KillerName, "Kill");
+        RewardVBucks(KillerName, "Kill"); //Rewards vbucks u put for kill in config, each so for EX: 3 kills = 75 vbucks since 25 vbucks per kill
     }).detach();
 }
 ```
@@ -68,7 +68,7 @@ auto* WinnerPS = (AFortPlayerStateAthena*)KillerPlayerState;
 if (WinnerPS) {
     std::string WinnerName = WinnerPS->GetPlayerName().ToString().c_str();
     std::thread([WinnerName]() {
-        RewardVBucks(WinnerName, "Win");
+        RewardVBucks(WinnerName, "Win"); //Rewards vbucks u put for win in config
     }).detach();
 }
 ```
