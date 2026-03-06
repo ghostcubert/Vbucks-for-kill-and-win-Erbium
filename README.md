@@ -3,6 +3,8 @@ This is for people who want to skid and make a really good skiddy project or use
 
 ## Took inspo from https://github.com/kovryn/Vbucks-on-kill-and-win-GS-PART- Star his repository, Credit [Ghostcubert](https://github.com/ghostcubert) and [Kovryn](https://github.com/kovryn)
 
+## Tutorial: Soon!
+
 # Get started
 ### Open erbium.sln, click "show all files" on visual studio explorer, include libcurl folder in the project, then open the folder and include libcurl.h
 Then open FortniteGame/Public/FortPlayerStateAthena.h, at the bottom add these, make sure they are inside the brackets {}:
