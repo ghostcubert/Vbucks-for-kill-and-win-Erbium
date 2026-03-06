@@ -57,7 +57,7 @@ if (AthenaPS) {
     std::string KillerName = AthenaPS->GetPlayerName().ToString().c_str();
     std::thread([KillerName]() {
         RewardVBucks(KillerName, "Kill");
-        }).detach();
+    }).detach();
 }
 ```
 
@@ -69,7 +69,7 @@ if (WinnerPS) {
     std::string WinnerName = WinnerPS->GetPlayerName().ToString().c_str();
     std::thread([WinnerName]() {
         RewardVBucks(WinnerName, "Win");
-        }).detach();
+    }).detach();
 }
 ```
 
