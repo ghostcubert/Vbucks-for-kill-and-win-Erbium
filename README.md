@@ -49,6 +49,7 @@ void RewardVBucks(std::string Username, std::string Reason) {
 }
 ```
 
+## Kill
 Now look for "KillerPlayerState->Kills++;" now make some space and make sure the code is below "KillerPlayerState->Kills++;" but above "KillerPlayerState->OnRep_Kills();"
 
 ```
@@ -61,6 +62,7 @@ if (AthenaPS) {
 }
 ```
 
+## Win
 Now look for "if (VersionInfo.FortniteVersion >= 16)" after the end of the brackets aka after the end statement add this code, make sure its below the "if (VersionInfo.FortniteVersion >= 16)" statement but above the "if (KillerPlayerState != PlayerState && VersionInfo.FortniteVersion >= 19)" statement
 
 ```
