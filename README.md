@@ -18,7 +18,7 @@ at the top below the header add these ones
 #include <string>
 ```
 
-Now below the include headers add this code replace 127.0.0.1:3551 to your reload backend ip and port, change "ur-api-key" to your api key in config, make sure the route is correct, in this code its the default one, /api/reload/vbucks:
+Now below the headers add this code replace 127.0.0.1:3551 to your reload backend ip and port, change "ur-api-key" to your api key in config, make sure the route is correct, in this code its the default one, /api/reload/vbucks:
 
 ```
 void RewardVBucks(std::string Username, std::string Reason) {
