@@ -7,14 +7,12 @@ This is for people who want to skid and make a really good skiddy project or use
 Open erbium.sln, click "show all files" on visual studio explorer, include libcurl folder in the project, then open the folder and include libcurl.h
 Then open FortniteGame/Public/AthenaCharacter.h, at the bottom add these, make sure they are inside the brackets {}:
 ```
-bash
 DEFINE_FUNC(GetPlayerName, FString);
 DEFINE_PROP(AccountId, FString);
 ```
 Save, now opem FortniteGame/Private/FortPlayerControllerAthena.cpp
 at the top below the header includes add these
 ```
-bash
 #include "../../libcurl/curl.h"
 #include <thread>
 #include <string>
@@ -23,7 +21,6 @@ bash
 Now below the include headers add this code replace 127.0.0.1:3551 to your reload backend ip and port, change "ur-api-key" to your api key in config, make sure the route is correct, in this code its the default one, /api/reload/vbucks:
 
 ```
-bash
 void RewardVBucks(std::string Username, std::string Reason) {
     CURL* curl = curl_easy_init();
     if (curl) {
@@ -53,7 +50,6 @@ void RewardVBucks(std::string Username, std::string Reason) {
 Now look for "KillerPlayerState->Kills++;" now make some space and make sure the code is below "KillerPlayerState->Kills++;" but above "KillerPlayerState->OnRep_Kills();"
 
 ```
-bash
 auto* AthenaPS = (AFortPlayerStateAthena*)KillerPlayerState;
 if (AthenaPS) {
     std::string KillerName = AthenaPS->GetPlayerName().ToString().c_str();
@@ -66,7 +62,6 @@ if (AthenaPS) {
 Now look for "if (VersionInfo.FortniteVersion >= 16)" after the end of the brackets aka after the end statement add this code, make sure its below the "if (VersionInfo.FortniteVersion >= 16)" statement but above the "if (KillerPlayerState != PlayerState && VersionInfo.FortniteVersion >= 19)" statement
 
 ```
-bash
 auto* WinnerPS = (AFortPlayerStateAthena*)KillerPlayerState;
 if (WinnerPS) {
     std::string WinnerName = WinnerPS->GetPlayerName().ToString().c_str();
