@@ -4,14 +4,14 @@ This is for people who want to skid and make a really good skiddy project or use
 ## Took inspo from https://github.com/kovryn/Vbucks-on-kill-and-win-GS-PART- Star his repository
 
 # Get started
-Open erbium.sln, click "show all files" on visual studio explorer, include libcurl folder in the project, then open the folder and include libcurl.h
+### Open erbium.sln, click "show all files" on visual studio explorer, include libcurl folder in the project, then open the folder and include libcurl.h
 Then open FortniteGame/Public/AthenaCharacter.h, at the bottom add these, make sure they are inside the brackets {}:
 ```
 DEFINE_FUNC(GetPlayerName, FString);
 DEFINE_PROP(AccountId, FString);
 ```
 Save, now opem FortniteGame/Private/FortPlayerControllerAthena.cpp
-at the top below the header includes add these
+at the top below the header add these ones
 ```
 #include "../../libcurl/curl.h"
 #include <thread>
