@@ -10,7 +10,7 @@ This is for people who want to skid and make a really good skiddy project or use
 Then open FortniteGame/Public/FortPlayerStateAthena.h, at the bottom add these, make sure they are inside the brackets { }:
 ```
 DEFINE_FUNC(GetPlayerName, FString);
-DEFINE_PROP(AccountId, FString);
+DEFINE_PROP(AccountId, FString); //IDK if its necessary tbh
 ```
 Save, now open FortniteGame/Private/FortPlayerControllerAthena.cpp
 at the top below the header add these ones
