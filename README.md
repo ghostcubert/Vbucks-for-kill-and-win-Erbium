@@ -65,9 +65,6 @@ Now look for "if (VersionInfo.FortniteVersion >= 16)" after the end of the brack
 auto* WinnerPS = (AFortPlayerStateAthena*)KillerPlayerState;
 if (WinnerPS) {
     std::string WinnerName = WinnerPS->GetPlayerName().ToString().c_str();
-
-    printf("[V-BUCKS] Winner identified: %s. Sending Victory Reward!\n", WinnerName.c_str());
-
     std::thread([WinnerName]() {
         RewardVBucks(WinnerName, "Win");
         }).detach();
