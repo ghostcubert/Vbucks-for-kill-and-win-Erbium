@@ -3,7 +3,7 @@ This is for people who want to skid and make a really good skiddy project or use
 
 ### Took inspo from https://github.com/kovryn/Vbucks-on-kill-and-win-GS-PART- Star his repository, Credit [Ghostcubert](https://github.com/ghostcubert) and [Kovryn](https://github.com/kovryn) if you use it in a "project"
 
-## Tutorial: [Here](https://www.example.com)
+## Tutorial: [Here](https://youtu.be/hmqNHJz8qXc)
 
 # Get started
 ### Open erbium.sln, click "show all files" on visual studio explorer, include libcurl folder, and other files with the red "-" sign in the project, including curl.h
