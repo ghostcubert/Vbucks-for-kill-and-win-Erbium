@@ -12,7 +12,7 @@ Then open FortniteGame/Public/FortPlayerStateAthena.h, at the bottom add these, 
 DEFINE_FUNC(GetPlayerName, FString);
 DEFINE_PROP(AccountId, FString);
 ```
-Save, now opem FortniteGame/Private/FortPlayerControllerAthena.cpp
+Save, now open FortniteGame/Private/FortPlayerControllerAthena.cpp
 at the top below the header add these ones
 ```
 #include "../../libcurl/curl.h"
