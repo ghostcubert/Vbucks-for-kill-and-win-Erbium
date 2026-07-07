@@ -1,7 +1,7 @@
 # Vbucks-for-kill-and-win-Erbium
 This is for people who want to skid and make a really good skiddy project or use it for reference, dm **@ghostcubert** on discord if you have any issues!
 
-### Credit [Ghostcubert](https://github.com/ghostcubert) and [TheRevisitor](https://github.com/TheRevisitor) ifyou use it in a "project"
+### Credit [Ghostcubert](https://github.com/ghostcubert) and [TheRevisitor](https://github.com/TheRevisitor) if you use it in a "project"
 
 ## Tutorial: [Here](https://youtu.be/hmqNHJz8qXc)
 
